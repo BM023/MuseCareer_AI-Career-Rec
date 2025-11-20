@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "DESKTOP"
+  },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#E4D8CC",
@@ -10,5 +13,8 @@
       "id": "Page1",
       "isDefault": true
     }
-  ]
+  ],
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  }
 }

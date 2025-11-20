@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 51,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "buttonColor": "#5d71e0",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": true,
   "dynamicBindingPathList": [
     {
@@ -25,8 +25,8 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "originalBottomRow": 37,
-  "originalTopRow": 33,
+  "originalBottomRow": 51,
+  "originalTopRow": 47,
   "parentId": "uhtwys3zcf",
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -35,9 +35,10 @@
   "responsiveBehavior": "hug",
   "rightColumn": 62,
   "text": "Submit",
-  "topRow": 33,
+  "tooltip": "Submit input for processing",
+  "topRow": 47,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "1phn0abgra",
-  "widgetName": "Button1"
+  "widgetName": "SubmitButton"
 }

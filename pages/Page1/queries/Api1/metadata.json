@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "691c7627102edd66cd768b0b_df92a737-46a2-4008-b2c0-1cf63f2f55c5",
+  "gitSyncId": "691c7627102edd66cd768b0b_aecf2e6a-0dc3-4a15-a6a6-645bb2b651f1",
   "id": "Page1_Api1",
   "pluginId": "Google AI",
   "pluginType": "AI",
@@ -12,6 +12,15 @@
         },
         "generateContentModel": {
           "data": "gemini-pro"
+        },
+        "messages": {
+          "data": [
+            {
+              "content": "{{ FilePicker.files && TextInput.text}}",
+              "role": "user",
+              "type": "text"
+            }
+          ]
         }
       },
       "paginationType": "NONE",
@@ -24,10 +33,14 @@
       "name": "Gemini API",
       "pluginId": "Google AI"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.messages.data[0].content"
+      }
+    ],
     "name": "Api1",
     "pageId": "Page1",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": true
   }
 }

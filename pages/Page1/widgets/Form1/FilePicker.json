@@ -3,15 +3,11 @@
     "*"
   ],
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "borderRadius": "0.375rem",
+  "bottomRow": 26,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "buttonColor": "#5d71e0",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onFilesSelected"
@@ -23,22 +19,22 @@
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "dps0z9cg3c",
   "label": "Upload CV",
   "leftColumn": 25,
-  "maxFileSize": "100",
-  "maxNumFiles": "10",
+  "maxFileSize": "200",
+  "maxNumFiles": "1",
   "minWidth": 120,
   "mobileBottomRow": 15,
   "mobileLeftColumn": 3,
   "mobileRightColumn": 19,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "onFilesSelected": "{{Api1.run()}}",
-  "originalBottomRow": 20,
-  "originalTopRow": 16,
+  "onFilesSelected": "{{Api1.run();}}",
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
   "parentColumnSpace": 15.037109375,
   "parentId": "uhtwys3zcf",
   "parentRowSpace": 10,
@@ -46,9 +42,9 @@
   "responsiveBehavior": "hug",
   "rightColumn": 41,
   "selectedFiles": [],
-  "topRow": 16,
+  "topRow": 22,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
   "widgetId": "k80g00s58x",
-  "widgetName": "FilePicker1"
+  "widgetName": "FilePicker"
 }

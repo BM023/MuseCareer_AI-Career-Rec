@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 97,
+  "bottomRow": 110,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "buttonColor": "#5d71e0",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -24,8 +24,8 @@
   "mobileRightColumn": 46,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "originalBottomRow": 97,
-  "originalTopRow": 93,
+  "originalBottomRow": 110,
+  "originalTopRow": 106,
   "parentId": "uhtwys3zcf",
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -34,9 +34,10 @@
   "responsiveBehavior": "hug",
   "rightColumn": 62,
   "text": "Reset",
-  "topRow": 93,
+  "tooltip": "Clear all fields",
+  "topRow": 106,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "dr00zzhi2z",
-  "widgetName": "Button2"
+  "widgetName": "ResetButton"
 }

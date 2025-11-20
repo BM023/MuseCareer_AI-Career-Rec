@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appsmith
+  namespace: MuseCareer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: appsmith
+  template:
+    metadata:
+      labels:
+        app: appsmith
+    spec:
+      containers:
+      - name: appsmith
+        image: appsmith/appsmith-ce:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: APPSMITH_MONGODB_URI
+          value: "mongodb://mongo-service:27017/appsmith"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: appsmith-service
+  namespace: MuseCareer
+spec:
+  selector:
+    app: appsmith
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: ClusterIP

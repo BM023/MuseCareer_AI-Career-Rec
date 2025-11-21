@@ -1,8 +1,8 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException, Form
+from mangum import Mangum
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
-from mangum import Mangum
 import google.generativeai as genai
 import PyPDF2
 import docx

@@ -17,7 +17,7 @@ app = FastAPI(title="MuseCareer API for Appsmith")
 # CORS middleware - Configure for Appsmith
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify Appsmith domain
+    allow_origins=["https://boikanyomz23.appsmith.com/app/musecareer/page1-691c7627102edd66cd768b0d?branch=main&environment=production"],  # Appsmith domain in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

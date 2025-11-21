@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile, HTTPException, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
+from mangum import Mangum
 import google.generativeai as genai
 import PyPDF2
 import docx
@@ -370,6 +371,9 @@ async def analyze_cv_text(request: TextAnalysisRequest):
     except Exception as e:
         app.logger.error("Unhandled error during text analysis: %s", str(e))
         raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
+
+# Wrap FastAPI with Mangum for AWS Lambda
+handler = Mangum(app)
 
 # Run locally
 if __name__ == "__main__":
